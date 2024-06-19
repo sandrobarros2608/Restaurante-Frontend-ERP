@@ -25,6 +25,15 @@ export const Categoria = () => {
                 </div>
 
                 <div className="card mx-3" style={{ width: '18rem' }}>
+                    <img src="./imgs/pedidospagados.png" className="card-img-top" alt="..." />
+                    <div className="card-body">
+                        <h5 className="card-title">Pedidos No Pagados</h5>
+                        <p className="card-text">Pagaran los pedidos.</p>
+                        <Link to="/pedidosnopagados" className="btn btn-primary">Ir a Pedidos No Pagados</Link>
+                    </div>
+                </div>
+
+                <div className="card mx-3" style={{ width: '18rem' }}>
                     <img src="./imgs/plata.png" className="card-img-top" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title">Historial de Ventas</h5>

@@ -6,6 +6,7 @@ import { Categoria } from './components/Categoria.jsx'
 import { Pedido } from './components/Pedido.jsx'
 import { InventarioProducto } from './components/InventarioProducto.jsx'
 import { PaginaLogin } from './auth/pages/PaginaLogin.jsx'
+import { PedidosNoPagados } from './components/PedidosNoPagados.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -16,6 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/categoria" element={<Categoria/>} />
         <Route path="/pedido" element={<Pedido/>} />
         <Route path="/inventario" element={<InventarioProducto />}/>
+        <Route path="/pedidosnopagados" element={<PedidosNoPagados />}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

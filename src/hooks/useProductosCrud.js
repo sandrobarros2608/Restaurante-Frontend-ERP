@@ -2,7 +2,7 @@ import { useReducer, useState } from "react";
 import { productosReducer } from "../reducer/productosReducer";
 import { ActualizarProducto, CargandoProductos, CrearProducto, EliminarProducto } from "../reducer/carroProductosActions";
 import Swal from "sweetalert2";
-import { findAll, removeProductId, saveProduct, updateProduct } from "../services/productosInventarioService";
+import { findAll, removeProductId, saveProduct, updateProduct } from "../api/productosInventarioService";
 
 const productoInicial = []
 
