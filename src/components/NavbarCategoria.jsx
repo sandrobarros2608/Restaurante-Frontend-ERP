@@ -15,7 +15,10 @@ export const NavbarCategoria = () => {
                                 <Link to="/inventario" className="btn btn-primary" style={{ marginLeft: '10px' }}>Agregar Productos</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/invetario" className="btn btn-primary" style={{ marginLeft: '10px' }}>Historial de Ventas</Link>
+                                <Link to="/pedidosnopagados" className="btn btn-primary" style={{ marginLeft: '10px' }}>Pedidos No Pagados</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/pedidospagados" className="btn btn-primary" style={{ marginLeft: '10px' }}>Historial de Ventas</Link>
                             </li>
                         </ul>
                     </div>
