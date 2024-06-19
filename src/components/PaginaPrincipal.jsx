@@ -61,7 +61,7 @@ export const PaginaPrincipal = () => {
                             <h6 className="section-subtitle">Apertura</h6>
                             <h3 className="section-title">Horario</h3>
                             <p className="mb-1 font-weight-bold">Lunes - Viernes : <span className="font-weight-normal pl-2 text-muted">5:00 pm - 12:30 am</span></p>
-                            <p className="mb-1 font-weight-bold">Sabado - Domingo : <span className="font-weight-normal pl-2 text-muted">5:00 pm - 1:30 pm</span></p>
+                            <p className="mb-1 font-weight-bold">Sabado - Domingo : <span className="font-weight-normal pl-2 text-muted">5:00 pm - 1:30 am</span></p>
                         </div>
                         <div className="col-md-6">
                             <div className="row">
@@ -88,7 +88,7 @@ export const PaginaPrincipal = () => {
                         <div className="col-md-6 mb-4">
                             <a href="javascrip:void(0)" className="custom-list">
                                 <div className="img-holder">
-                                    <img src="./imgs/dish-1.jpg" />
+                                    <img src="./imgs/hamburguesanueva.jpg" />
                                 </div>
                                 <div className="info">
                                     <div className="head clearfix">
@@ -104,12 +104,12 @@ export const PaginaPrincipal = () => {
                         <div className="col-md-6 mb-4">
                             <a href="javascrip:void(0)" className="custom-list">
                                 <div className="img-holder">
-                                    <img src="./imgs/dish-2.jpg" />
+                                    <img src="./imgs/hamburguesanuevacarne.jpeg" />
                                 </div>
                                 <div className="info">
                                     <div className="head clearfix">
-                                        <h5 className="title float-left">Burrito Mixto</h5>
-                                        <p className="float-right text-primary">$35</p>
+                                        <h5 className="title float-left">Hamburguesa Triple Queso</h5>
+                                        <p className="float-right text-primary">$25.000</p>
                                     </div>
                                     <div className="body">
                                         <p>Voluptatem voluptate ad fugit aliquam, laboriosam neque vero incidunt itaque.</p>
@@ -120,12 +120,12 @@ export const PaginaPrincipal = () => {
                         <div className="col-md-6 mb-4">
                             <a href="javascrip:void(0)" className="custom-list">
                                 <div className="img-holder">
-                                    <img src="./imgs/dish-3.jpg" />
+                                    <img src="./imgs/hamburguesabbq.webp" />
                                 </div>
                                 <div className="info">
                                     <div className="head clearfix">
-                                        <h5 className="title float-left">Salchipapa Mixta</h5>
-                                        <p className="float-right text-primary">$18</p>
+                                        <h5 className="title float-left">Hamburguesa Caramelizada</h5>
+                                        <p className="float-right text-primary">$18.500</p>
                                     </div>
                                     <div className="body">
                                         <p>Accusamus libero quo tempore suscipit molestias qui quam illo facere aspernatur esse! Doloribus?</p>
@@ -136,12 +136,12 @@ export const PaginaPrincipal = () => {
                         <div className="col-md-6 mb-4">
                             <a href="javascrip:void(0)" className="custom-list">
                                 <div className="img-holder">
-                                    <img src="./imgs/dish-4.jpg" />
+                                    <img src="./imgs/hamburguesapollo.jpg" />
                                 </div>
                                 <div className="info">
                                     <div className="head clearfix">
-                                        <h5 className="title float-left">Picada (4P)</h5>
-                                        <p className="float-right text-primary">$30</p>
+                                        <h5 className="title float-left">Hamburguesa BBQ</h5>
+                                        <p className="float-right text-primary">$26.000</p>
                                     </div>
                                     <div className="body">
                                         <p>Doloremque maiores tempore, nostrum rerum nihil distinctio expedita voluptates eos deserunt.</p>
@@ -152,12 +152,12 @@ export const PaginaPrincipal = () => {
                         <div className="col-md-6 mb-4">
                             <a href="javascrip:void(0)" className="custom-list">
                                 <div className="img-holder">
-                                    <img src="./imgs/dish-5.jpg" />
+                                    <img src="./imgs/ham.jpg" />
                                 </div>
                                 <div className="info">
                                     <div className="head clearfix">
-                                        <h5 className="title float-left">Perro Suizo</h5>
-                                        <p className="float-right text-primary">$24</p>
+                                        <h5 className="title float-left">Hamburguesa Clasica</h5>
+                                        <p className="float-right text-primary">$16.000</p>
                                     </div>
                                     <div className="body">
                                         <p>Doloremque maiores tempore, nostrum rerum expedita incidunt eius voluptates eos deserunt.</p>
@@ -168,12 +168,12 @@ export const PaginaPrincipal = () => {
                         <div className="col-md-6 mb-4">
                             <a href="javascrip:void(0)" className="custom-list">
                                 <div className="img-holder">
-                                    <img src="./imgs/dish-6.jpg" />
+                                    <img src="./imgs/hambu.webp" />
                                 </div>
                                 <div className="info">
                                     <div className="head clearfix">
-                                        <h5 className="title float-left">Mazorca Desgranada Mixta</h5>
-                                        <p className="float-right text-primary">$44</p>
+                                        <h5 className="title float-left">Hamburguesa De Pollo</h5>
+                                        <p className="float-right text-primary">$20.000</p>
                                     </div>
                                     <div className="body">
                                         <p>Doloremque maiores tempore, nostrum rerum nihil distinctio expedita voluptates eos deserunt.</p>
@@ -189,8 +189,8 @@ export const PaginaPrincipal = () => {
             {/* Menu Section */}
             <section className="has-img-bg">
                 <div className="container">
-                    <h6 className="section-subtitle text-center">Asados</h6>
-                    <h3 className="section-title mb-6 text-center">Menu de Asados</h3>
+                    <h6 className="section-subtitle text-center">Hamburguesas</h6>
+                    <h3 className="section-title mb-6 text-center">Menu de Promociones</h3>
                     <div className="card bg-light">
                         <div className="card-body px-4 pb-4 text-center">
                             <div className="row text-left">
@@ -198,10 +198,10 @@ export const PaginaPrincipal = () => {
                                     <a href="#" className="pb-3 mx-3 d-block text-dark text-decoration-none border border-left-0 border-top-0 border-right-0">
                                         <div className="d-flex">
                                             <div className="flex-grow-1">
-                                                Pechuga asada
+                                                Hamburguesa Clasica y Doble Carne
                                                 <p className="mt-1 mb-0">Numquam dolor dolores molestiae maiores quidem.</p>
                                             </div>
-                                            <h6 className="float-right text-primary">$12</h6>
+                                            <h6 className="float-right text-primary">$20.000</h6>
                                         </div>
                                     </a>
                                 </div>
@@ -209,10 +209,10 @@ export const PaginaPrincipal = () => {
                                     <a href="#" className="pb-3 mx-3 d-block text-dark text-decoration-none border border-left-0 border-top-0 border-right-0">
                                         <div className="d-flex">
                                             <div className="flex-grow-1">
-                                                Carne asada
+                                                Hamburguesa Clasica y Caramelizada
                                                 <p className="mt-1 mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                             </div>
-                                            <h6 className="float-right text-primary">$23</h6>
+                                            <h6 className="float-right text-primary">$23.000</h6>
                                         </div>
                                     </a>
                                 </div>
@@ -220,10 +220,10 @@ export const PaginaPrincipal = () => {
                                     <a href="#" className="pb-3 mx-3 d-block text-dark text-decoration-none border border-left-0 border-top-0 border-right-0">
                                         <div className="d-flex">
                                             <div className="flex-grow-1">
-                                                Costilla BBQ
+                                                Hamburguesa Clasica y Triple Queso
                                                 <p className="mt-1 mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                             </div>
-                                            <h6 className="float-right text-primary">$32</h6>
+                                            <h6 className="float-right text-primary">$24.000</h6>
                                         </div>
                                     </a>
                                 </div>
@@ -231,10 +231,10 @@ export const PaginaPrincipal = () => {
                                     <a href="#" className="pb-3 mx-3 d-block text-dark text-decoration-none border border-left-0 border-top-0 border-right-0">
                                         <div className="d-flex">
                                             <div className="flex-grow-1">
-                                                Lomo de Cerdo
+                                                Hamburguesa Clasica y BBQ
                                                 <p className="mt-2 mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                             </div>
-                                            <h6 className="float-right text-primary">$17</h6>
+                                            <h6 className="float-right text-primary">$25.000</h6>
                                         </div>
                                     </a>
                                 </div>
@@ -242,10 +242,10 @@ export const PaginaPrincipal = () => {
                                     <a href="#" className="pb-3 mx-3 d-block text-dark text-decoration-none border border-left-0 border-top-0 border-right-0">
                                         <div className="d-flex">
                                             <div className="flex-grow-1">
-                                                Asado Mixto
+                                                Hamburguesa Clasica y De Pollo
                                                 <p className="mt-2 mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                             </div>
-                                            <h6 className="float-right text-primary">$21</h6>
+                                            <h6 className="float-right text-primary">$21.000</h6>
                                         </div>
                                     </a>
                                 </div>
@@ -253,10 +253,10 @@ export const PaginaPrincipal = () => {
                                     <a href="#" className="pb-3 mx-3 d-block text-dark text-decoration-none border border-left-0 border-top-0 border-right-0">
                                         <div className="d-flex">
                                             <div className="flex-grow-1">
-                                                Bandeja
+                                                Hamburguesa Clasica y Super Mack's Big
                                                 <p className="mt-2 mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                             </div>
-                                            <h6 className="float-right text-primary">$10</h6>
+                                            <h6 className="float-right text-primary">$33.000</h6>
                                         </div>
                                     </a>
                                 </div>

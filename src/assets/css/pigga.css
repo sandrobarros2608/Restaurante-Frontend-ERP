@@ -11493,7 +11493,7 @@ section.has-overlay:after {
 
 section.has-img-bg {
   position: relative;
-  background: url(../img/section.jpg) no-repeat center top fixed;
+  background: url(../img/header.jpg) no-repeat center top fixed;
   background-size: cover;
   color: #fff;
 }
