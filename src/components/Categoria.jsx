@@ -38,7 +38,7 @@ export const Categoria = () => {
                     <div className="card-body">
                         <h5 className="card-title">Historial de Ventas</h5>
                         <p className="card-text">Irás al historial de ventas.</p>
-                        <Link to="/record" className="btn btn-primary">Ir a Historial de Ventas</Link>
+                        <Link to="/pedidospagados" className="btn btn-primary">Ir a Historial de Ventas</Link>
                     </div>
                 </div>
             </section>

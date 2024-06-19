@@ -15,4 +15,5 @@ export const Logout = 'Logout';
 
 //Pedidos No Pagados
 export const ActualizarPedidoNoPagado = 'ActualizarPedidoNoPagado';
-export const CargandoPedidos = 'CargandoPedidos';
+export const CargandoPedidosNoPagados = 'CargandoPedidosNoPagados';
+export const CargandoPedidosPagados = 'CargandoPedidosPagados';

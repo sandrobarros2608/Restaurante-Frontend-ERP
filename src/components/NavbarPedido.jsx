@@ -12,7 +12,13 @@ export const NavbarPedido = () => {
                                 <Link to="/inventario" className="btn btn-primary">Agregar Productos</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/pedido" className="btn btn-primary" style={{ marginLeft: '10px' }}>Historial de Ventas</Link>
+                                <Link to="/pedidosnopagados" className="btn btn-primary" style={{ marginLeft: '10px' }}>Pedidos No Pagados</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/pedidospagados" className="btn btn-primary" style={{ marginLeft: '10px' }}>Historial de Ventas</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/categoria" className="btn btn-primary" style={{ marginLeft: '10px' }}>Volver a Categorias</Link>
                             </li>
                         </ul>
                     </div>

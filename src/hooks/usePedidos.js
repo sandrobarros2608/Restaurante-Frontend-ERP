@@ -1,21 +1,31 @@
 import { useReducer } from "react";
-import { pedidosNoPagadosReducer } from "../reducer/pedidosNoPagadosReducer";
-import { ActualizarPedidoNoPagado, CargandoPedidos } from "../reducer/carroProductosActions";
-import { findOrderUnpaid, updateOrder } from "../api/pedidosService";
+import { pedidosReducer } from "../reducer/pedidosReducer";
+import { ActualizarPedidoNoPagado, CargandoPedidosNoPagados, CargandoPedidosPagados } from "../reducer/carroProductosActions";
+import { findOrderPaid, findOrderUnpaid, updateOrder } from "../api/pedidosService";
 
 const inicialPedidos = [];
 export const usePedidos = () => {
 
-    const [pedidos, dispatch] = useReducer(pedidosNoPagadosReducer, inicialPedidos);
+    const [pedidos, dispatch] = useReducer(pedidosReducer, inicialPedidos);
 
-    const obtenerTodosLosPedidos = async () => {
+    const obtenerTodosLosPedidosNoPagados = async () => {
         const result = await findOrderUnpaid();
         console.log("Promesa: " + result);
         dispatch({
-            type: CargandoPedidos,
+            type: CargandoPedidosNoPagados,
             payload: result.data,
         })
     }
+
+    const obtenerTodosLosPedidosPagados = async () => {
+        const result = await findOrderPaid();
+        console.log("Promesa: " + result);
+        dispatch({
+            type: CargandoPedidosPagados,
+            payload: result.data,
+        })
+    }
+
     const handlerPagarPedido = async (pedidoNoPagado) => {
         console.log(pedidoNoPagado);
         let response = await updateOrder(pedidoNoPagado.id, pedidoNoPagado.total, true);
@@ -29,6 +39,7 @@ export const usePedidos = () => {
         pedidos,
 
         handlerPagarPedido,
-        obtenerTodosLosPedidos,
+        obtenerTodosLosPedidosNoPagados,
+        obtenerTodosLosPedidosPagados,
     }
 }

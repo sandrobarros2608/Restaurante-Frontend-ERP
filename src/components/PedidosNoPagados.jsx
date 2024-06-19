@@ -5,10 +5,10 @@ import { useEffect } from "react";
 
 export const PedidosNoPagados = () => {
 
-    const {pedidos, handlerPagarPedido, obtenerTodosLosPedidos} = usePedidos();
+    const {pedidos, handlerPagarPedido, obtenerTodosLosPedidosNoPagados} = usePedidos();
 
     useEffect(() => {
-        obtenerTodosLosPedidos();
+        obtenerTodosLosPedidosNoPagados();
     }, [])
 
     return (

@@ -1,6 +1,6 @@
-import { ActualizarPedidoNoPagado, CargandoPedidos } from "./carroProductosActions";
+import { ActualizarPedidoNoPagado, CargandoPedidosNoPagados, CargandoPedidosPagados } from "./carroProductosActions";
 
-export const pedidosNoPagadosReducer = (state = [], action) => {
+export const pedidosReducer = (state = [], action) => {
     switch (action.type) {
 
         case ActualizarPedidoNoPagado:
@@ -14,7 +14,10 @@ export const pedidosNoPagadosReducer = (state = [], action) => {
                 return pedidoNoPagadoActualizar;
             });
 
-        case CargandoPedidos:
+        case CargandoPedidosNoPagados:
+            return action.payload;
+
+        case CargandoPedidosPagados:
             return action.payload;
 
         default:
