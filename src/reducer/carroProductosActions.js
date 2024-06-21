@@ -17,3 +17,4 @@ export const Logout = 'Logout';
 export const ActualizarPedidoNoPagado = 'ActualizarPedidoNoPagado';
 export const CargandoPedidosNoPagados = 'CargandoPedidosNoPagados';
 export const CargandoPedidosPagados = 'CargandoPedidosPagados';
+export const EnviarPedido = 'EnviarPedido';

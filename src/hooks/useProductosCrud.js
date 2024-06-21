@@ -47,6 +47,9 @@ export const useProductosCrud = () => {
             (producto.id === 0) ? "El producto ha sido creado con exito!" : "El producto ha sido actualizado con exito!",
             "success"
         );
+        setTimeout(() => {
+            window.location.reload();
+        }, 1000);
         handlerCerrarFormulario();
     }
 

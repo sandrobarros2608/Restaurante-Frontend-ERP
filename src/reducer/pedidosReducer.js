@@ -1,7 +1,12 @@
-import { ActualizarPedidoNoPagado, CargandoPedidosNoPagados, CargandoPedidosPagados } from "./carroProductosActions";
+import { ActualizarPedidoNoPagado, CargandoPedidosNoPagados, CargandoPedidosPagados, EnviarPedido } from "./carroProductosActions";
 
 export const pedidosReducer = (state = [], action) => {
     switch (action.type) {
+
+        case EnviarPedido:
+            return {
+                total: action.payload
+            }
 
         case ActualizarPedidoNoPagado:
             return state.map(pedidoNoPagadoActualizar => {

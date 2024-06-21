@@ -1,12 +1,22 @@
 import { useReducer } from "react";
 import { pedidosReducer } from "../reducer/pedidosReducer";
-import { ActualizarPedidoNoPagado, CargandoPedidosNoPagados, CargandoPedidosPagados } from "../reducer/carroProductosActions";
-import { findOrderPaid, findOrderUnpaid, updateOrder } from "../api/pedidosService";
+import { ActualizarPedidoNoPagado, CargandoPedidosNoPagados, CargandoPedidosPagados, EnviarPedido } from "../reducer/carroProductosActions";
+import { findOrderPaid, findOrderUnpaid, saveOrder, updateOrder } from "../api/pedidosService";
+import Swal from "sweetalert2";
 
 const inicialPedidos = [];
 export const usePedidos = () => {
 
     const [pedidos, dispatch] = useReducer(pedidosReducer, inicialPedidos);
+
+    //Crear pedido
+    const handlerCrearPedido = async (total) => {
+        let response = await saveOrder(total);
+        dispatch({
+            type: EnviarPedido,
+            payload: response.data,
+        })
+    }
 
     const obtenerTodosLosPedidosNoPagados = async () => {
         const result = await findOrderUnpaid();
@@ -33,6 +43,14 @@ export const usePedidos = () => {
             type: ActualizarPedidoNoPagado,
             payload: response.data,
         });
+        Swal.fire({
+            title: "Pedido Pagado!",
+            text: "El pedido se ha pagado correctamente!",
+            icon: "success"
+        });
+        setTimeout(() => {
+            window.location.reload();
+        }, 1000);
     }
 
     return {
@@ -41,5 +59,6 @@ export const usePedidos = () => {
         handlerPagarPedido,
         obtenerTodosLosPedidosNoPagados,
         obtenerTodosLosPedidosPagados,
+        handlerCrearPedido,
     }
 }

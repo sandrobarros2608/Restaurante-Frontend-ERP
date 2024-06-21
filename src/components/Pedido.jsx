@@ -1,4 +1,6 @@
 import { useCarroProductos } from "../hooks/useCarroProductos"
+import { useDetalle } from "../hooks/useDetalle";
+import { usePedidos } from "../hooks/usePedidos";
 import { CarroDeCompras } from "./CarroDeCompras"
 import { Menu } from "./Menu"
 import { NavbarPedido } from "./NavbarPedido";
@@ -7,7 +9,9 @@ import { NavbarPedido } from "./NavbarPedido";
 export const Pedido = () => {
 
     //carroProductos, handlerAgregarProductoAlCarro, handlerEliminarProductoDelCarro viene de el Hooks useCarroProductos
-    const { carroProductos, handlerAgregarProductoAlCarro, handlerEliminarProductoDelCarro } = useCarroProductos();
+    const { carroProductos, handlerAgregarProductoAlCarro, handlerEliminarProductoDelCarro, } = useCarroProductos();
+
+    const { handlerCrearPedido } = usePedidos();
 
     return (
         <>
@@ -23,7 +27,7 @@ export const Pedido = () => {
                         {carroProductos?.length <= 0 ? (
                             <div className="alert alert-warning alert-dismissible fade show">No hay productos en el carrito de compras!</div>
                         ) : (
-                            <CarroDeCompras productosCarro={carroProductos} handlerEliminar={handlerEliminarProductoDelCarro} />
+                            <CarroDeCompras productosCarro={carroProductos} handlerEliminar={handlerEliminarProductoDelCarro} handlerCrearPedido={handlerCrearPedido}/>
                         )}
                     </div>
                 </div>

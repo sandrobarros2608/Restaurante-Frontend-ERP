@@ -15,6 +15,7 @@ export const useCarroProductos = () => {
         sessionStorage.setItem('carro', JSON.stringify(carroProductos));
     }, [carroProductos])
 
+
     //Agrega la comida al carrito
     const handlerAgregarProductoAlCarro = (producto) => {
         const productoEnCarro = carroProductos.find((i) => i.producto.id === producto.id);

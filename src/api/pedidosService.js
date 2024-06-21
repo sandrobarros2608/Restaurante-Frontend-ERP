@@ -2,11 +2,10 @@ import axios from "axios"
 
 const BASE_URL_ORDER = 'http://localhost:8080/pedido';
 
-export const saveOrder = async ({ nombre, precio }) => {
+export const saveOrder = async ({ total }) => {
     try {
         return await axios.post(`${BASE_URL_ORDER}/`, {
-            nombre,
-            precio,
+            total,
         })
     } catch (error) {
         console.error(error);
